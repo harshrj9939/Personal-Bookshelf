@@ -31,7 +31,7 @@ const Home = () => {
                 type="text"
                 value={query}
                 onChange={(e) => setQuery(e.target.value)}
-                placeholder="Search for books..."
+                placeholder="Search for the books..."
             />
             <button onClick={handleSearch}>Search</button>
             {loading && <p>Loading...</p>}
@@ -45,7 +45,7 @@ const Home = () => {
                     ))}
                 </ul>
             )}
-            {books.length === 0 && !loading && <p>No books found.</p>}
+            {books.length === 0 && !loading && <p>No books found...</p>}
         </div>
     );
 };
